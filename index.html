@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synth Soft Prototipo</title>
+    <meta
+      name="description"
+      content="Una empresa de desarrollo web, moderna y enfocada."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #ffffff;
+              }
+            </style>
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </label>
+        <a href="#" class="enlace">
+          <img src="img/logo.svg" alt="" class="logo" />
+        </a>
+        <ul class="navul">
+          <li><a class="active" href="#">Inicio</a></li>
+          <li><a href="#" onclick="toggle1()">Servicios</a></li>
+          <li><a href="#" onclick="toggle()">Nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="general" id="blur">
+        <article>
+          <h1>
+          <img src="img/prisma.jpg" />
+          <img src="img/logo.svg" />
+        </h1>
+        </article>
+        
+          <div class="containerLetras">
+            <span style="--l: 'S'">S</span>
+            <span style="--l: 'y'">y</span>
+            <span style="--l: 'n'">n</span>
+            <span style="--l: 't'">t</span>
+            <span style="--l: 'h'">h</span>
+            <span id="sverde" style="--l: 'S'">S</span>
+            <span style="--l: 'o'">o</span>
+            <span style="--l: 'f'">f</span>
+            <span style="--l: 't'">t</span>
+          </div>
+        
+      </section>
+    </main>
+    <div id="popup">
+      <h2>Misión de la empresa:</h2>
+      <p>
+        Entregar un software completamente personalizado por el cliente, el cual
+        sea de la mejor calidad al menor precio posible, en un lapso de tiempo
+        razonable
+      </p>
+      <br />
+      <h2>Visión de la empresa:</h2>
+      <p>
+        Nuestra empresa busca llegar a un nivel internacional en cuanto a la
+        calidad y eficiencia se refiere. Queremos llegar a ser una empresa
+        fuerte en el mercado de las páginas web, ofreciendo un producto superior
+        al de la competencia.
+      </p>
+      <br />
+      <h2>Valores de la empresa:</h2>
+      <p>
+        Nuestros valores son; la integridad con nuestros clientes y personal, la
+        responsabilidad de las decisiones que tomamos, buscar la máxima calidad
+        posible para el cliente y fomentar la creatividad y la búsqueda de
+        nuevas ideas con la finalidad de impulsar la innovación de una forma
+        sostenible, tanto ambientalmente como de una manera tal que genere
+        aportes de valor a la comunidad.
+      </p>
+      <br />
+      <button onclick="toggle()" class="ui-btn">
+        <span> Cerrar </span>
+      </button>
+    </div>
+    <div id="popup1">
+      <h2>Los servicios que ofrecemos:</h2>
+      <p>
+        Somos una empresa desarrolladora de software, principalmente enfocada en
+        las aplicaciones y sitios web, pero también contamos con las capacidades
+        necesarias para cumplir otro tipo de encargos.
+        <br>
+        <h3>Nuestro proyecto más reciente:</h3>
+        <br>
+<a id="saborizame" href="synthsoft.github.io">!Saborízame¡</a>
+      </p>
+      <br>
+      <button onclick="toggle1()" class="ui-btn">
+        <span> Cerrar </span>
+      </button>
+    </div>
+    <footer>
+      <img src="img/logo.svg" alt="" class="logofooter" />
+      <div class="social-icons-container">
+        <a
+          href="https://www.instagram.com/synthsoftuy/"
+          target="_blank"
+          class="social-icon"
+        ></a>
+      </div>
+      <ul class="footer-menu-container">
+        <li class="menu-item">synthsoft@gmail.com</li>
+      </ul>
+      <span class="copyright"
+        >&copy;2023, Synth Soft. Todos los derechos reservados.</span
+      >
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/d913c5e0eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("active");
+      }
+    </script>
+    <script>
+      function toggle1() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup1 = document.getElementById("popup1");
+        popup1.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
