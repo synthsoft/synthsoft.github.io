@@ -9,9 +9,13 @@ body {
   background: url(../img/wallpaper.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
+  width: 100%;
 }
 ::-webkit-scrollbar {
   display: none;
+}
+header {
+  width: 100%;
 }
 nav {
   background: black;
@@ -308,7 +312,7 @@ footer {
   pointer-events: none;
   user-select: none;
 }
-#popup, #popup1 {
+#popup, #popup1, #popup2 {
   position: fixed;
   top: 40%;
   left: 50%;
@@ -320,8 +324,9 @@ footer {
   visibility: hidden;
   opacity: 0;
   transition: .7s;
+  z-index: 10000;
 }
-#popup.active, #popup1.active {
+#popup.active, #popup1.active, #popup2.active {
   top: 50%;
   visibility: visible;
   opacity: 1;
@@ -332,7 +337,7 @@ footer {
   margin-bottom: 5px;
   color: linear-gradient(90deg, #ff6464 0%, #ffbf59 50%, #47c9ff 100%);
 }
-#popup p, #popup1 p {
+#popup p, #popup1 p, #popup2 p {
   font-size: 17px;
 }
 .ui-btn {
@@ -494,4 +499,28 @@ footer {
 }
 #saborizame {
   font-size:x-large
+}
+.formulario-contacto {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#popup2 {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+#popup2 h2 {
+  box-sizing: border-box;
+  font-size: 27px;
+}
+#popup2 textarea {
+  resize: none;
+  height: 100px;
+}
+#popup2 label {
+  font-size: 22px;
 }

@@ -98,6 +98,7 @@
         <span> Cerrar </span>
       </button>
     </div>
+
     <div id="popup1">
       <h2>Los servicios que ofrecemos:</h2>
       <p>
@@ -107,12 +108,32 @@
         <br>
         <h3>Nuestro proyecto más reciente:</h3>
         <br>
-<a id="saborizame" href="synthsoft.github.io">!Saborízame¡</a>
+<a id="saborizame" href="https://saborizame.great-site.net">!Saborízame¡</a>
       </p>
       <br>
       <button onclick="toggle1()" class="ui-btn">
         <span> Cerrar </span>
       </button>
+    </div>
+
+    <div id="popup2">
+      <h2>Envíanos un correo</h2>
+      <form class="formulario-contacto" action="https://formspree.io/f/mbjvbvlp"
+      method="POST">
+      <label>
+        Su email:
+        <input type="email" name="email">
+      </label>
+      <br>
+      <label>
+        Su mensaje:
+        <textarea name="message"></textarea>
+      </label>
+      <br>
+      <!-- your other form fields go here -->
+      <button class="ui-btn" type="submit">Enviar</button>
+    </form>
+      </form>
     </div>
     <footer>
       <img src="img/logo.svg" alt="" class="logofooter" />
@@ -124,10 +145,10 @@
         ></a>
       </div>
       <ul class="footer-menu-container">
-        <li class="menu-item">synthsoft@gmail.com</li>
+        <li class="menu-item" ><button onclick="toggle2()" class="ui-btn boton-contacto-footer">Contáctanos</button></li>
       </ul>
       <span class="copyright"
-        >&copy;2023, Synth Soft. Todos los derechos reservados.</span
+        >&copy;2023 Synth Soft ⌂ Todos los derechos reservados.</span
       >
     </footer>
     <script
@@ -148,6 +169,14 @@
         blur.classList.toggle("active");
         var popup1 = document.getElementById("popup1");
         popup1.classList.toggle("active");
+      }
+    </script>
+    <script>
+      function toggle2() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup2 = document.getElementById("popup2");
+        popup2.classList.toggle("active");
       }
     </script>
   </body>
